@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-section h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.contact-card:hover {
+  transform: rotateX(8deg) rotateY(-8deg) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Call Button */
+.call-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 114, 255, 0.6);
+}
+
+/* Mobile Friendly */
+@media (max-width: 480px) {
+  .contact-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .call-btn {
+    font-size: 0.85rem;
+    padding: 9px 16px;
+  }
+}
+

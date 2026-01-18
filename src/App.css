@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}

@@ -1,0 +1,59 @@
+/* .rules-page {
+  padding: 40px;
+  background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: #1b5e20;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.day-card {
+  background: white;
+  border-left: 8px solid #2e7d32;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.day-card:hover {
+  transform: translateY(-5px);
+} */
+
+.rules-page {
+    padding: 40px;
+    background: linear-gradient(to bottom right, #e8f5e9, #ffffff);
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.day-card {
+    background: white;
+    border-left: 8px solid #2e7d32;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .rules-page,
+    .day-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
