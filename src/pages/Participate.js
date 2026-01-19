@@ -11,7 +11,7 @@ export default function Participate() {
     competitionName: ""
   });
 
-  const groupOptions = ["ক", "খ", "গ", "প্রয়োজন নেই"];
+  const groupOptions = ["ক", "খ", "গ", "সর্বসাধারণ",  "A" , "B" ];
   const competitionOptions = [
     "শঙ্খধ্বনি",
     "মিউজিক্যাল চেয়ার",
