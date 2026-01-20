@@ -35,8 +35,8 @@ export default function Participate() {
      await axios.post("https://vercel-backend-mu-dun.vercel.app/api/participants", data);
 
 
-      toast.success("Submitted Successfully 🎉", {
-        position: "top-right",
+      toast.success("Submitted Successfully! 🎉", {
+        position: "top-center",
         autoClose: 2000
       });
 
