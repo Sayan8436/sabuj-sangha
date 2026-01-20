@@ -42,10 +42,18 @@ export default function Participate() {
 
       setData({ name: "", group: "", competitionName: "" });
     } catch (error) {
+
+    if (error.response && error.response.status === 409) {
+      toast.warn("You already submitted this competition ⚠️", {
+        position: "top-center",
+        autoClose: 2500
+      });
+    } else {
       toast.error("Submission Failed ❌", {
-        position: "top-right",
+        position: "top-center",
         autoClose: 2000
       });
+    }
       console.error(error);
     }
   };
